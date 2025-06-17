@@ -1,105 +1,58 @@
-:root {
-    --cor-de-fundo: #1E1E1E;
-    --verde: #6FFF57;
-    --branco: #FFFFFF;
-    --botao-ativo: #3A375E;
-    --botao-inativo: rgba(58, 55, 94, 0.5);
-    --texto-fundo: rgba(58, 55, 94, 0.3);
-}
+<!DOCTYPE html>
+<html lang="pt-br">
 
-body {
-    background-color: var(--cor-de-fundo);
-    color: var(--branco);
-    font-family: 'Chakra Petch', sans-serif;
-}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meus objetivos do ano</title>
+    <link rel="stylesheet" href="style.css">
+</head>
 
+<body>
+    <section class="conteudo-principal">
+        <h2 class="titulo-principal">Meus Objetivos do ano<span>_</span></h2>
+        <div class="botoes">
+            <button class="botao ativo">Me tornar um super medico</button>
+            <button class="botao">Cursar Engenharia Mecânica</button>
+            <button class="botao">Viajar para o Chile</button>
+            <button class="botao">Comprar um Carro</button>
+        </div>
+    
+        <div class="abas-textos">
+            <div class="aba-conteudo ativo">
+              <h3 class="aba-conteudo-titulo-principal" >Me tornar campeão de kart</h3>
+              <h4 class="aba-conteudo-titulo-secundario" >Tempo para completar o objetivo</h4>
+              <div class="contador"></div>
 
-.conteudo-principal {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    max-width: 1200px;
-    width: 100%;
-    margin: 0 auto;
-}
+            </div>
 
-.titulo-principal {
-    text-align: left;
-    width: 100%;
-    font-size: 32px;
-}
+            <div class="aba-conteudo">
+              <h3 class="aba-conteudo-titulo-principal" >Cursar Engenharia Mecânica</h3>
+              <h4 class="aba-conteudo-titulo-secundario" >Tempo para completar o objetivo</h4>
+              
+            </div>
 
-.titulo-principal span {
-    color: var(--verde);
-}
+            <div class="aba-conteudo">
+              <h3 class="aba-conteudo-titulo-principal" >Viajar para o Chile</h3>
+              <h4 class="aba-conteudo-titulo-secundario" >Tempo para completar o objetivo</h4>
+              
+            </div>
 
-.botao {
-    font-family: "Chakra Petch", sans-serif;
-    background-color: var(--botao-inativo);
-    color: var(--branco);
-    display: flex;
-    justify-content: center;
-    padding: 1em;
-    font-size: 18px;
-    align-items: center;
-    width: 100%;
-    border-bottom: 4px solid var(--botao-ativo);
-    border-left: 2px solid var(--botao-ativo);
-    border-right: 2px solid var(--botao-ativo);
-    border-top: none;
-}
-
-.botao:first-child {
-    border-radius: 40px 40px 0 0;
-}
-
-.botoes {
-    display: block;
-}
-
-.botao.ativo {
-    background-color: var(--botao-ativo);
-    border-bottom: 4px solid var(--verde);
-}
-
-.abas-textos {
-    background-color: var(--texto-fundo);
-    padding: 40px;
-    border-radius: 0 0 40px 40px;
-}
-
-.aba-conteudo.ativo {
-    display: block;
-}
-
-.aba-conteudo {
-    display: none;
-}
-
-.aba-conteudo-titulo-principal {
-    font-size: 28px;
-    text-align: center;
-}
-
-.aba-conteudo-tirulo-secundario {
-    text-align: center;
-    color: var(--verde);
-    text-transform: uppercase;
-}
+            <div class="aba-conteudo">
+              <h3 class="aba-conteudo-titulo-principal" >Comprar um Carro</h3>
+              <h4 class="aba-conteudo-titulo-secundario" >Tempo para completar o objetivo</h4>
+              
+            </div>
 
 
+        </div>
+    
+    
+    
+    
+    </section>
+    <script src="main.js"></script>
 
-.aba @media screen and (min-width: 768px) {
-    .botoes {
-        display: flex;
-    }
+</body>
 
-    .botao:first-child {
-        border-radius: 40px 0 0 0;
-    }
-
-    .botao:last-child {
-        border-radius: 0 40px 0 0;
-    }
-}
+</html>
